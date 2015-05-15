@@ -13,6 +13,10 @@ section {
         background-color: black;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        display: inline-block !important;
+    }
+
     h2 {
         font-size: 3rem;
         margin-left: 1rem;
@@ -56,6 +60,23 @@ section {
         &:before {
             content: "\2014";
             padding-right: .5rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+        span {
+            display: block;
+            margin-left: 0;
+            margin-bottom: .5rem;
+
+            &:before {
+                content: "";
+                padding-right: 0;
+            }
+        }
+
+        summary span {
+
         }
     }
 }
