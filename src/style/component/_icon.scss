@@ -1,6 +1,17 @@
 .icon {
-    display: block;
-    width: 250px;
-    height: 150px;
-    background-color: blue;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 50%;
+    float: right;
+    background-image: url(../image/profile.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media (max-width: 600px) {
+    .icon {
+        float: none;
+        margin: 0 auto 30px auto;
+    }
 }

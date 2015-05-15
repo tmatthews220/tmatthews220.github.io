@@ -44,18 +44,26 @@ header, footer, section {
   flex: 5; }
 
 .icon {
-  display: block;
-  width: 250px;
-  height: 150px;
-  background-color: blue; }
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 50%;
+  float: right;
+  background-image: url(../image/profile.jpg);
+  background-size: cover;
+  background-position: 50% 50%; }
 
+@media (max-width: 600px) {
+  .icon {
+    float: none;
+    margin: 0 auto 30px auto; } }
 #logo {
   display: block;
   font-size: 0px;
   height: 0px;
   width: 80%;
   padding-top: 28.5%;
-  margin: 12.5% auto 10px auto;
+  margin: 20% auto 10px auto;
   background-image: url(../image/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,7 +102,9 @@ q {
   flex-direction: row; }
 
 section {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  overflow: auto;
+  zoom: 1; }
   section:before {
     content: "";
     position: absolute;
@@ -111,14 +121,15 @@ section {
   section h4 {
     font-size: 1.25rem; }
   section ul {
-    color: #999;
     font-size: 1.1rem;
     line-height: 1.2rem;
     margin: 0 0 1rem 2rem; }
     section ul li {
       margin-bottom: 1rem; }
   section p {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    text-indent: .1rem; }
   section article {
     padding: .25rem 2rem 1.25rem 2rem; }
   section span {
