@@ -1,0 +1,32 @@
+q {
+    font-size: 1.3rem;
+
+    &:before , &:after {
+        top: .2rem;
+        position: relative;
+    }
+
+    &:before { content: "["; }
+    &:after { content: "]"; }
+
+    a {
+        color: black;
+        margin-right: 1rem;
+        text-decoration: none;
+
+        &:last-child { margin-right: 0; }
+    }
+
+    a:before {
+        content: "";
+        position: absolute;
+        bottom: .2rem;
+        left: 0px;
+        right: 0px;
+        height: 1px;
+        background-color: black;
+    }
+
+    a:after { content: ","; }
+    a:last-child:after { content: ""; }
+}
